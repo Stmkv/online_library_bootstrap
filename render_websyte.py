@@ -11,7 +11,7 @@ def on_reload():
     )
     template = env.get_template("template.html")
 
-    with open(r"books\books.json", "r") as file:
+    with open(r"books\books.json", "r", encoding="utf-8") as file:
         books_description = json.load(file)
 
     books_descriptions = list(chunked(books_description, 2))
