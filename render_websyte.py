@@ -23,7 +23,7 @@ def on_reload():
     pages_amount = len(books_descriptions)
     for page_number, books_on_page in enumerate(books_descriptions, start=1):
         render_page = template.render(
-            books=list(chunked(books_on_page, BOOKS_ON_ROW)),
+            books=books_on_page,
             pages_amount=pages_amount,
             page_number=page_number,
         )
