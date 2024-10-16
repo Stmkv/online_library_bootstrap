@@ -6,7 +6,6 @@ from livereload import Server
 from more_itertools import chunked
 
 BOOKS_ON_PAGE = 20
-BOOKS_ON_ROW = 2
 
 
 def on_reload():
